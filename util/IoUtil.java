@@ -94,16 +94,6 @@ public class IoUtil {
     }
 
     /**
-     * 判断写入文件名称(未实现！！！)
-     *
-     * @param suffix
-     * @return
-     */
-    public static File getFile(String suffix) {
-        return new File("");
-    }
-
-    /**
      * 对象数组获取对应实例对象
      * 通过变量查找数组对应的变量，以获取实例对象
      * 如果没有此内容返回null
