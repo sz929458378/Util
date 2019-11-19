@@ -11,6 +11,10 @@ import java.util.regex.Pattern;
  * @author Dex
  */
 public class RegexUtil {
+
+    //最多存储1w个正则对象
+    private static final int len = 10000;
+
     //存储正则表达式的实例对象，key->表达式,value->正则对象
     private static Map<String, Pattern> patternMap = new HashMap<>();
 
@@ -19,6 +23,7 @@ public class RegexUtil {
     }
 
     public static String regex(String cont, String regex, int group) {
+        if (patternMap.size() >= len) patternMap.clear();   //当Map存满，则清空Map
         if (!patternMap.containsKey(regex)) patternMap.put(regex, Pattern.compile(regex));
 
         if (cont != null) {
