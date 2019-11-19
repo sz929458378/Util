@@ -1,7 +1,8 @@
 package com.bilibili.util;
 
 /**
- * 十进制-26进制互转工具类
+ * 十进制英文相互转换
+ * 例如:1=A,27=AA
  *
  * @author Dex
  */
