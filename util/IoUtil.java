@@ -81,6 +81,7 @@ public class IoUtil {
     /**
      * 通过反序列化获取类存储到其他存储接口
      * 例如 Mysql,Excel...
+     * 需要实现IStorageService接口
      *
      * @param filePath       序列化文件名
      * @param storageService 存储数据服务
