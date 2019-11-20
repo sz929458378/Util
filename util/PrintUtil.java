@@ -19,7 +19,6 @@ public final class PrintUtil {
         ERROR(ERROR_NAME, ERROR_SWITCH, ERROR_LEVEL),
         FATAL(FATAL_NAME, FATAL_SWITCH, FATAL_LEVEL);
 
-
         private final String name;
         private final boolean print;
         private final int level;
